@@ -9,9 +9,9 @@ class Edge : public QGraphicsItem {
 
     public:
 
-        Edge(Vertex *sourceVertex, Vertex *destVertex, QString color);
-        ~Edge();
-        Vertex *sourceVertex() const;
+        Edge(Vertex *sourceVertex, Vertex *destVertex, QString color);      //
+        ~Edge();                                                            //
+        Vertex *sourceVertex() const;                                       //
         Vertex *destVertex() const;
         void adjust();
         unsigned int getLenght() const { return lenght; }
