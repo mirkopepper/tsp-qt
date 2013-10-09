@@ -51,7 +51,7 @@ void MainWindow::myTimer()
 void MainWindow::on_pushButton_clicked()
 {
     Scene->clear();
-    if(ui->nVertex->text().toInt()!=0)
+    if(ui->nVertex->text().toInt()>0)
     {
         graph = new Graph(Scene, ui->nVertex->text().toInt());
         graph->addVertex(Scene);
